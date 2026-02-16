@@ -31,7 +31,7 @@ const HeroSection = () => {
             opacity: 1,
             transition: {
                 duration: 1.2,
-                ease: [0.22, 1, 0.36, 1]
+                ease: "easeInOut"
             }
         },
     };
@@ -121,7 +121,7 @@ const HeroSection = () => {
                     <motion.div
                         initial={{ scaleX: 1 }}
                         animate={{ scaleX: 0 }}
-                        transition={{ duration: 1.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                        transition={{ duration: 1.5, delay: 0.3, ease: "easeInOut" }}
                         className="absolute inset-0 bg-deep-black origin-right z-20"
                     />
                 </div>
